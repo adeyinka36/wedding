@@ -3,6 +3,9 @@
     <div class="side">
         <MainSide/>
         <Story/>
+        <Map/>
+        <Questions/>
+        <Travel/>
     </div>
 </template>
 <script>
@@ -11,12 +14,15 @@ const default_layout = "default";
 import Home from '../components/Home';
 import Story from '../components/Story';
 import MainSide from '../components/MainSide';
+import Questions from "../components/Questions";
+import Map from "../components/Map";
+import Travel from "../components/Travel";
 
 
 
 export default {
     name: 'App',
-    components: {MainSide, Home,Story},
+    components: {MainSide, Home, Story, Questions, Map, Travel},
   computed: {},
   data() {
       return {
