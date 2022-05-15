@@ -1,11 +1,15 @@
 <template class="app-con">
-    <Home class="home"/>
+    <Home :picture="picture" class="home"/>
     <div class="side">
-        <MainSide/>
-        <Story/>
-        <Map/>
-        <Questions/>
-        <Travel/>
+        <MainSide />
+        <Story @story="story"/>
+        <Map @map="map"/>
+        <Questions @ques="ques"/>
+        <Travel @travel="travel"/>
+        <Pictures :current="current" @selected="selected" class="watch"/>
+        <Transition>
+         <Modal @minimize="open=false" v-if="open" />
+        </Transition>
     </div>
 </template>
 <script>
@@ -17,18 +21,43 @@ import MainSide from '../components/MainSide';
 import Questions from "../components/Questions";
 import Map from "../components/Map";
 import Travel from "../components/Travel";
+import Pictures from "../components/Pictures";
+import Modal from "../components/Modal";
 
 
 
 export default {
     name: 'App',
-    components: {MainSide, Home, Story, Questions, Map, Travel},
+    components: {MainSide, Home, Story, Questions, Map, Travel, Pictures, Modal},
   computed: {},
   data() {
       return {
-          message:'Welcome to our wedding'
+          message:'Welcome to our wedding',
+          open: false,
+          picture:'',
+          people: [],
+          current:[]
       }
-  }
+  },
+  methods: {
+        selected(data) {
+            this.open = true;
+            // this.current = ""
+            console.log(data)
+        },
+        story(){
+            this.picture = 'story'
+        },
+        map(){
+            this.picture = 'map'
+        },
+        ques(){
+            this.picture = 'ques'
+        },
+        travel(){
+            this.picture = 'travel'
+        }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -55,5 +84,14 @@ export default {
           width: 28.8vw;
           right: 0;
       }
+  }
+  .v-enter-active,
+  .v-leave-active {
+      transition: opacity 0.5s ease;
+  }
+
+  .v-enter-from,
+  .v-leave-to {
+      opacity: 0;
   }
 </style>

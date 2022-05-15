@@ -1,6 +1,6 @@
 <template>
     <div class="map-con">
-        <h1>Location</h1>
+        <h1 class="watch">Location</h1>
         <div class="desc">
             <p>EKO HOTEL, LAGOS.</p>
             <p>SATURDAY, JUNE 11TH 2022</p>
@@ -12,6 +12,20 @@
 <script>
   export default{
       name: 'Map',
+      mounted() {
+          const observer  =  new IntersectionObserver(entries=>{
+              entries.forEach(entry=> {
+                if(entry.isIntersecting){
+                    this.$emit('map')
+                }
+              })
+          });
+
+          setTimeout(()=>{
+              let watch = document.getElementsByClassName('watch')[0]
+              observer.observe(watch);
+          },500)
+      }
   }
 </script>
 
