@@ -51,7 +51,7 @@ export default{
 
 <style lang="scss" scoped>
 .main-con{
-    padding: 1rem;
+    padding: 1.5rem;
     h1{
         margin-top: 2.2rem;
     }

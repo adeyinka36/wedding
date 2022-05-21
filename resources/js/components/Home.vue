@@ -6,19 +6,18 @@
                 <svg v-else @click="toggleDrop" class="bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
                 <p @click="toggleDrop" >MENU</p>
                 <ul :class="['drop-down', showDrop && 'activate-drop']">
-                    <li class="couple"><h2>ADEYEMI & EFE</h2></li>
-                    <li>Home</li>
-                    <li>Story</li>
-                    <li>Schedule</li>
-                    <li>Q & A</li>
-                    <li>Travel</li>
-                    <li>Wedding Party</li>
-                    <li>Registry</li>
-                    <li>Moments</li>
+                    <li @click="$emit('scroll', 'home');showDrop=false" class="couple"><h2>ADEYEMI & EFE</h2></li>
+                    <li @click="$emit('scroll', 'home');showDrop=false">Home</li>
+                    <li @click="$emit('scroll', 'story');showDrop=false">Story</li>
+                    <li @click="$emit('scroll', 'location');showDrop=false">Location</li>
+                    <li @click="$emit('scroll', 'ques');showDrop=false">Q & A</li>
+                    <li @click="$emit('scroll', 'travel');showDrop=false">Travel</li>
+                    <li @click="$emit('scroll', 'pictures');showDrop=false">Reception</li>
+                    <li @click="$emit('showGallery')">Gallery</li>
                 </ul>
             </div>
-            <div class="description">
-                <h1>ADEYEMI</h1>
+            <div @click="showDrop=false" class="description">
+                <h1 class="first">ADEYEMI</h1>
                 <h1>& EFE</h1>
                 <p>We can't wait to share our special day with you. Help us capture our wedding with love.</p>
             </div>
@@ -50,7 +49,9 @@ export default{
 </script>
 
 <style lang="scss" scoped>
-
+.main-container{
+    position: relative;
+}
 .main-container .main {
     width: 100%;
     height: 100vh;
@@ -62,9 +63,18 @@ export default{
     background-size: cover;
     background-repeat: no-repeat;
     .description {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);
         padding: 2rem 5rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
     }
     .nav {
+        z-index: 1000;
         ul.drop-down{
             position: absolute;
             transition: height ease-out 1s, opacity linear;

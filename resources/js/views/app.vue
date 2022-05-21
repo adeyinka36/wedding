@@ -1,16 +1,19 @@
 <template class="app-con">
-    <Home :picture="picture" class="home"/>
-    <div class="side">
-        <MainSide />
-        <Story @story="story"/>
-        <Map @map="map"/>
-        <Questions @ques="ques"/>
-        <Travel @travel="travel"/>
-        <Pictures :current="current" @selected="selected" class="watch"/>
+    <div v-if="!showGallery">
+    <Home :picture="picture" class="home" @showGallery="showGallery=true" @scroll="scroll"/>
+    <div  class="side">
+        <MainSide id="home"/>
+        <Story id="story" @story="story"/>
+        <Map id="location" @map="map"/>
+        <Questions id="ques" @ques="ques"/>
+        <Travel id="travel" @travel="travel"/>
+        <Pictures id="pictures" :current="current" @selected="selected" class="watch"/>
         <Transition>
-         <Modal @minimize="open=false" v-if="open" />
+         <Modal :current="current" @minimize="open=false" v-if="open" />
         </Transition>
     </div>
+    </div>
+    <Gallery v-else @closeGallery="showGallery=false"/>
 </template>
 <script>
 
@@ -23,12 +26,13 @@ import Map from "../components/Map";
 import Travel from "../components/Travel";
 import Pictures from "../components/Pictures";
 import Modal from "../components/Modal";
+import Gallery from "../components/Gallery";
 
 
 
 export default {
     name: 'App',
-    components: {MainSide, Home, Story, Questions, Map, Travel, Pictures, Modal},
+    components: {MainSide, Home, Story, Questions, Map, Travel, Pictures, Modal, Gallery},
   computed: {},
   data() {
       return {
@@ -36,13 +40,17 @@ export default {
           open: false,
           picture:'',
           people: [],
-          current:[]
+          current: null,
+          showGallery: false
       }
   },
   methods: {
+        scroll(location){
+            document.getElementById(location).scrollIntoView()
+        },
         selected(data) {
             this.open = true;
-            // this.current = ""
+             this.current = data
             console.log(data)
         },
         story(){

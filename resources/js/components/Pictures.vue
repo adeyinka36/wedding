@@ -2,8 +2,8 @@
     <div class="main-con">
         <h1>RECEPTION</h1>
         <div class="gallery">
-            <span class="pic" v-for="pic in images">
-              <img @click="$emit('selected',pic[1])" :src="pic[0]">
+            <span class="pic" v-for="(pic, index) in images">
+              <img @click="$emit('selected', index)" :src="pic[0]">
               <p>{{pic[1]}}</p>
             </span>
         </div>
@@ -49,12 +49,12 @@ export default {
 
             .pic {
                 max-width: 40%;
-                min-width: 15rem;
+                min-width: 11rem;
                 margin: 0 .5rem 1.25rem;
 
                 img{
                     max-width: 100%;
-                    min-width: 15rem;
+                    min-width: 11rem;
                     transition: transform 250ms ease-out;
                     border: 5px solid rgba(255, 165, 0, 0);
                     &:hover{
