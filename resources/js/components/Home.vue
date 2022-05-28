@@ -66,7 +66,7 @@ export default{
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,.5);
+        background: radial-gradient(rgba(0,0,0,0), #000);
         padding: 2rem 5rem 2rem 2rem;
         display: flex;
         flex-direction: column;
@@ -74,13 +74,16 @@ export default{
         align-items: flex-start;
     }
     .nav {
+        width: 120px;
+        padding: 1rem;
         z-index: 1000;
+        border-radius: 30px;
         ul.drop-down{
             position: absolute;
             transition: height ease-out 1s, opacity linear;
             height: 0;
             visibility: hidden;
-            top: 2rem;
+            top: 2.5rem;
             left: 1rem;
             background-color: pink;
             width: 70vw;
@@ -88,8 +91,9 @@ export default{
             padding: 1rem;
             border-radius: 8px;
             li{
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 margin-top: 1rem;
+                font-weight: bold;
                 &:hover{
                     cursor: pointer;
                     color:  rgb(178, 124, 106);
@@ -122,7 +126,17 @@ export default{
         .main{
             position: fixed;
             width: 70vw;
+            z-index: 1;
+        }
+        .description{
+            h1{
+             font-size: 2rem;
+            }
+            p{
+             font-size: 1.5rem;
+            }
         }
     }
 }
+
 </style>

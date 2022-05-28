@@ -28,15 +28,15 @@ export default{
             showModal: false,
             images:[
                 '../../images/people.jpg',
+                '../../images/people2.jpg',
                 '../../images/people.jpg',
+                '../../images/people2.jpg',
                 '../../images/people.jpg',
+                '../../images/people2.jpg',
                 '../../images/people.jpg',
+                '../../images/people2.jpg',
                 '../../images/people.jpg',
-                '../../images/people.jpg',
-                '../../images/people.jpg',
-                '../../images/people.jpg',
-                '../../images/people.jpg',
-                '../../images/people.jpg',
+                '../../images/people2.jpg',
             ]
         }
     },
@@ -129,7 +129,7 @@ export default{
                 }
                 &:hover{
                     cursor: pointer;
-                    color: lightyellow;
+                    color: #fffff8;
                 }
             }
         }

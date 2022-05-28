@@ -16,7 +16,7 @@
     .main-side{
         width: 100%;
         height: 100vh;
-        background-color: lightyellow;
+        background-color: #fffff8;
         position: relative;
         display: flex;
         justify-content: center;

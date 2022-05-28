@@ -16,16 +16,16 @@ export default {
     data(){
         return{
             images:[
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
-                ['../../images/people.jpg', 'Leke Giwa'],
+                ['../../images/people.jpg', 'Person1'],
+                ['../../images/people2.jpg', 'Person2'],
+                ['../../images/people.jpg', 'Person1'],
+                ['../../images/people2.jpg', 'Person2'],
+                ['../../images/people.jpg', 'Person1'],
+                ['../../images/people2.jpg', 'Person2'],
+                ['../../images/people.jpg', 'Person2'],
+                ['../../images/people2.jpg', 'Person1'],
+                ['../../images/people.jpg', 'Person2'],
+                ['../../images/people2.jpg', 'Person1'],
             ]
         }
     },
@@ -33,7 +33,7 @@ export default {
 </script>
 <style lang="scss" scoped>
     .main-con {
-        padding: 1rem;
+        padding: 1.5rem;
         h1{
             text-align: center;
             margin-bottom: 1rem;

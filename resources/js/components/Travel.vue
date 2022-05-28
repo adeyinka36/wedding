@@ -23,12 +23,12 @@ export default{
     data(){
         return {
             questions:[
-                ['Eko Hotel Station', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Eko Hotel Station', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Eko Hotel Station', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Eko Hotel Station', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Eko Hotel Station', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Eko Hotel Station', '12 max road, MK4R RFS','This is 4 miles from the location'],
+                ['Location1', '12 max road, MK4R RFS','This is 4 miles from the location'],
+                ['Location2', '12 max road, MK4R RFS','This is 4 miles from the location'],
+                ['Location3', '12 max road, MK4R RFS','This is 4 miles from the location'],
+                ['Location4', '12 max road, MK4R RFS','This is 4 miles from the location'],
+                ['Location5', '12 max road, MK4R RFS','This is 4 miles from the location'],
+                ['Location6', '12 max road, MK4R RFS','This is 4 miles from the location'],
             ]
         }
     },
@@ -69,7 +69,7 @@ export default{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     .orange,.car{
         color: orangered !important;
     }

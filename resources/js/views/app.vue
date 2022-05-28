@@ -70,9 +70,12 @@ export default {
 </script>
 <style lang="scss" scoped>
   .app-con{
-      background-color: lightyellow;
+      background-color: #fffff8;
       min-width: 100vw;
       display: flex;
+      .home{
+          z-index: -1;
+      }
       .side {
           width: 100vw;
           display: flex;
@@ -89,8 +92,10 @@ export default {
       .side{
           overflow: auto;
           float: right;
-          width: 28.8vw;
+          width: 30vw;
+          z-index: 1;
           right: 0;
+          padding: 1rem;
       }
   }
   .v-enter-active,
