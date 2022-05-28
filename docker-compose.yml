@@ -15,7 +15,7 @@ services:
         container_name: "yemi-nginx"
         image: nginx:stable-alpine
         ports:
-            - "8000:80"
+            - "80:80"
         networks:
             - yemi
         depends_on:
