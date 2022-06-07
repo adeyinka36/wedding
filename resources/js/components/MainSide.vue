@@ -3,7 +3,7 @@
         <div class="flowers f1"></div>
         <div class="event">
             <p>Saturday, June 11th 2022</p>
-            <h2>Lagos, Nigeria</h2>
+            <h2>Delta, Nigeria</h2>
             <p v-if="this.future">In {{ days }}Days and {{hours}}Hrs.</p>
             <p v-else>{{ days }}Days  and {{hours}}Hrs Ago.</p>
         </div>
