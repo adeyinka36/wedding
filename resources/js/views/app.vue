@@ -95,7 +95,7 @@ export default {
           width: 30vw;
           z-index: 1;
           right: 0;
-          padding: 1rem;
+          padding: 0 0 1rem 1rem;
       }
   }
   .v-enter-active,
@@ -107,4 +107,9 @@ export default {
   .v-leave-to {
       opacity: 0;
   }
+</style>
+<style lang="css">
+    html{
+        background-color: #fffff8 !important;
+    }
 </style>

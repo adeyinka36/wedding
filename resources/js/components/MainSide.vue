@@ -4,12 +4,36 @@
         <div class="event">
             <p>Saturday, June 11th 2022</p>
             <h2>Lagos, Nigeria</h2>
-            <p>20Days, 20Hrs, 20Mins.</p>
+            <p v-if="this.future">In {{ days }}Days and {{hours}}Hrs.</p>
+            <p v-else>{{ days }}Days  and {{hours}}Hrs Ago.</p>
         </div>
         <div class="flowers f2"></div>
     </div>
 </template>
 <script>
+export default{
+    data (){
+        return{
+            future: new Date() < new Date('06-11-2022'),
+            days: 20,
+            hours: 20
+        }
+    },
+    created() {
+        let remainder = 0;
+        let today = new Date()
+        let wedding =  new Date('06-11-2022');
+        if(today < wedding){
+           this.days = Math.floor(( wedding.getTime() - today.getTime() )/(1000*60*60*24))
+            remainder = ( wedding.getTime() - today.getTime() )%(1000*60*60*24)
+            this.hours = Math.floor(remainder/ (1000*60*60))
+        } else {
+            this.days = Math.floor(( today.getTime() -  wedding.getTime() )/(1000*60*60*24))
+            remainder = ( today.getTime() -  wedding.getTime() )%(1000*60*60*24)
+            this.hours = Math.floor(remainder/ (1000*60*60))
+        }
+    }
+}
 
 </script>
 <style lang="scss" scoped>
@@ -27,6 +51,9 @@
            h2{
                margin-top: .75rem;
                margin-bottom: .75rem;
+           }
+           *{
+               text-align: center;
            }
         }
         .flowers{

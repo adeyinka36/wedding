@@ -23,12 +23,7 @@ export default{
     data(){
         return {
             questions:[
-                ['Location1', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Location2', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Location3', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Location4', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Location5', '12 max road, MK4R RFS','This is 4 miles from the location'],
-                ['Location6', '12 max road, MK4R RFS','This is 4 miles from the location'],
+                ['Location', 'The Palm Centre', 'No. 7 Ogala Street, off Owo-Eke Road','Boji Boji Owa-Agbor']
             ]
         }
     },

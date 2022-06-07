@@ -19622,8 +19622,13 @@ __webpack_require__.r(__webpack_exports__);
     return {
       currentImage: null,
       showModal: false,
-      images: ['../../images/people.jpg', '../../images/people2.jpg', '../../images/people.jpg', '../../images/people2.jpg', '../../images/people.jpg', '../../images/people2.jpg', '../../images/people.jpg', '../../images/people2.jpg', '../../images/people.jpg', '../../images/people2.jpg']
+      images: []
     };
+  },
+  created: function created() {
+    for (var i = 1; i <= 8; i++) {
+      this.images.push("../../images/picture-".concat(i, ".jpg"));
+    }
   },
   methods: {
     triggerModal: function triggerModal(index) {
@@ -19676,6 +19681,44 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     toggleDrop: function toggleDrop() {
       this.showDrop = !this.showDrop;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/MainSide.vue?vue&type=script&lang=js":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/MainSide.vue?vue&type=script&lang=js ***!
+  \**************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      future: new Date() < new Date('06-11-2022'),
+      days: 20,
+      hours: 20
+    };
+  },
+  created: function created() {
+    var remainder = 0;
+    var today = new Date();
+    var wedding = new Date('06-11-2022');
+
+    if (today < wedding) {
+      this.days = Math.floor((wedding.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+      remainder = (wedding.getTime() - today.getTime()) % (1000 * 60 * 60 * 24);
+      this.hours = Math.floor(remainder / (1000 * 60 * 60));
+    } else {
+      this.days = Math.floor((today.getTime() - wedding.getTime()) / (1000 * 60 * 60 * 24));
+      remainder = (today.getTime() - wedding.getTime()) % (1000 * 60 * 60 * 24);
+      this.hours = Math.floor(remainder / (1000 * 60 * 60));
     }
   }
 });
@@ -19865,7 +19908,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'Travel',
   data: function data() {
     return {
-      questions: [['Location1', '12 max road, MK4R RFS', 'This is 4 miles from the location'], ['Location2', '12 max road, MK4R RFS', 'This is 4 miles from the location'], ['Location3', '12 max road, MK4R RFS', 'This is 4 miles from the location'], ['Location4', '12 max road, MK4R RFS', 'This is 4 miles from the location'], ['Location5', '12 max road, MK4R RFS', 'This is 4 miles from the location'], ['Location6', '12 max road, MK4R RFS', 'This is 4 miles from the location']]
+      questions: [['Location', 'The Palm Centre', 'No. 7 Ogala Street, off Owo-Eke Road', 'Boji Boji Owa-Agbor']]
     };
   },
   mounted: function mounted() {
@@ -20239,20 +20282,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
       $data.showDrop = false;
     })
-  }, "Travel"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  }, "Travel"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                    <li @click=\"$emit('scroll', 'pictures');showDrop=false\">Reception</li>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
     onClick: _cache[9] || (_cache[9] = function ($event) {
-      _ctx.$emit('scroll', 'pictures');
-
-      $data.showDrop = false;
-    })
-  }, "Reception"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
-    onClick: _cache[10] || (_cache[10] = function ($event) {
       return _ctx.$emit('showGallery');
     })
   }, "Gallery")], 2
   /* CLASS */
   )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    onClick: _cache[11] || (_cache[11] = function ($event) {
+    onClick: _cache[10] || (_cache[10] = function ($event) {
       return $data.showDrop = false;
     }),
     "class": "description"
@@ -20293,15 +20330,30 @@ var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "event"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Saturday, June 11th 2022"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Lagos, Nigeria"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "20Days, 20Hrs, 20Mins.")], -1
+var _hoisted_3 = {
+  "class": "event"
+};
+
+var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Saturday, June 11th 2022", -1
   /* HOISTED */
   );
 });
 
-var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Lagos, Nigeria", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_6 = {
+  key: 0
+};
+var _hoisted_7 = {
+  key: 1
+};
+
+var _hoisted_8 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "flowers f2"
   }, null, -1
@@ -20309,9 +20361,12 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_5 = [_hoisted_2, _hoisted_3, _hoisted_4];
-function render(_ctx, _cache) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_5);
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, this.future ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_6, "In " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.days) + "Days and " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.hours) + "Hrs.", 1
+  /* TEXT */
+  )) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.days) + "Days and " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.hours) + "Hrs Ago.", 1
+  /* TEXT */
+  ))]), _hoisted_8]);
 }
 
 /***/ }),
@@ -20349,14 +20404,14 @@ var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
 var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "desc"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "EKO HOTEL, LAGOS."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "SATURDAY, JUNE 11TH 2022")], -1
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "The Palm Centre."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "No. 7 Ogala Street, off Owo-Eke Road"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Boji Boji Owa-Agbor"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "SATURDAY, JUNE 11TH 2022"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Time: 12noon.")], -1
   /* HOISTED */
   );
 });
 
 var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("iframe", {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179373.19670210892!2d3.1205295379310227!3d6.568909183523651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53aec4dd92d%3A0x5e34fe6a84cddd53!2sEko%20Hotels%20%26%20Suites!5e0!3m2!1sen!2suk!4v1652534711929!5m2!1sen!2suk",
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31728.935579149846!2d6.164735448961567!3d6.248316921289028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10414e56ba75d509%3A0xfb109346984ce351!2sAgbor%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1654616591162!5m2!1sen!2suk",
     width: "100%",
     height: "450",
     style: {
@@ -20924,18 +20979,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _public_images_wedding_placeholder_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../public/images/wedding-placeholder.jpg */ "./public/images/wedding-placeholder.jpg");
-/* harmony import */ var _public_images_wedding2_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../public/images/wedding2.jpg */ "./public/images/wedding2.jpg");
+/* harmony import */ var _public_images_picture_1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../public/images/picture-1.jpg */ "./public/images/picture-1.jpg");
+/* harmony import */ var _public_images_picture_6_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../public/images/picture-6.jpg */ "./public/images/picture-6.jpg");
+/* harmony import */ var _public_images_picture_8_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../public/images/picture-8.jpg */ "./public/images/picture-8.jpg");
 // Imports
 
 
 
 
+
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_public_images_wedding_placeholder_jpg__WEBPACK_IMPORTED_MODULE_2__["default"]);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_public_images_wedding2_jpg__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_public_images_picture_1_jpg__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_public_images_picture_6_jpg__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_public_images_picture_8_jpg__WEBPACK_IMPORTED_MODULE_4__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".main-container[data-v-f2b6376c] {\n  position: relative;\n}\n.main-container .main[data-v-f2b6376c] {\n  width: 100%;\n  height: 100vh;\n  max-width: 100%;\n  position: relative;\n  transition: background 750ms ease-out;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.main-container .main .description[data-v-f2b6376c] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: radial-gradient(rgba(0, 0, 0, 0), #000);\n  padding: 2rem 5rem 2rem 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  align-items: flex-start;\n}\n.main-container .main .nav[data-v-f2b6376c] {\n  width: 120px;\n  padding: 1rem;\n  z-index: 1000;\n  border-radius: 30px;\n}\n.main-container .main .nav ul.drop-down[data-v-f2b6376c] {\n  position: absolute;\n  transition: height ease-out 1s, opacity linear;\n  height: 0;\n  visibility: hidden;\n  top: 2.5rem;\n  left: 1rem;\n  background-color: pink;\n  width: 70vw;\n  max-width: 500px;\n  padding: 1rem;\n  border-radius: 8px;\n}\n.main-container .main .nav ul.drop-down li[data-v-f2b6376c] {\n  font-size: 1.3rem;\n  margin-top: 1rem;\n  font-weight: bold;\n}\n.main-container .main .nav ul.drop-down li[data-v-f2b6376c]:hover {\n  cursor: pointer;\n  color: #b27c6a;\n}\n.main-container .main .nav ul.drop-down .couple[data-v-f2b6376c] {\n  margin-bottom: 2rem;\n}\n.main-container .main .nav ul.activate-drop[data-v-f2b6376c] {\n  height: auto;\n  visibility: visible;\n}\n.main-container .map[data-v-f2b6376c] {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}\n.main-container .story[data-v-f2b6376c] {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n.main-container .travel[data-v-f2b6376c] {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}\n.main-container .ques[data-v-f2b6376c] {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n@media (min-width: 768px) {\n.main-container .main[data-v-f2b6376c] {\n    position: fixed;\n    width: 70vw;\n    z-index: 1;\n}\n.main-container .description h1[data-v-f2b6376c] {\n    font-size: 2rem;\n}\n.main-container .description p[data-v-f2b6376c] {\n    font-size: 1.5rem;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".main-container[data-v-f2b6376c] {\n  position: relative;\n}\n.main-container .main[data-v-f2b6376c] {\n  width: 100%;\n  height: 100vh;\n  max-width: 100%;\n  position: relative;\n  transition: background 750ms ease-out;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-position: 0 .05rem;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.main-container .main .description[data-v-f2b6376c] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: radial-gradient(rgba(0, 0, 0, 0), #000);\n  padding: 2rem 5rem 5rem 2rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-end;\n  align-items: flex-start;\n}\n.main-container .main .nav[data-v-f2b6376c] {\n  width: 120px;\n  padding: 1rem;\n  z-index: 1000;\n  border-radius: 30px;\n}\n.main-container .main .nav ul.drop-down[data-v-f2b6376c] {\n  position: absolute;\n  transition: height ease-out 1s, opacity linear;\n  height: 0;\n  visibility: hidden;\n  top: 2.5rem;\n  left: 1rem;\n  background-color: pink;\n  width: 70vw;\n  max-width: 500px;\n  padding: 1rem;\n  border-radius: 8px;\n}\n.main-container .main .nav ul.drop-down li[data-v-f2b6376c] {\n  font-size: 1.3rem;\n  margin-top: 1rem;\n  font-weight: bold;\n}\n.main-container .main .nav ul.drop-down li[data-v-f2b6376c]:hover {\n  cursor: pointer;\n  color: #b27c6a;\n}\n.main-container .main .nav ul.drop-down .couple[data-v-f2b6376c] {\n  margin-bottom: 2rem;\n}\n.main-container .main .nav ul.activate-drop[data-v-f2b6376c] {\n  height: auto;\n  visibility: visible;\n}\n.main-container .map[data-v-f2b6376c] {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}\n.main-container .story[data-v-f2b6376c] {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n}\n.main-container .travel[data-v-f2b6376c] {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n.main-container .ques[data-v-f2b6376c] {\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n}\n@media (min-width: 768px) {\n.main-container .main[data-v-f2b6376c] {\n    position: fixed;\n    width: 70vw;\n    z-index: 1;\n}\n.main-container .description h1[data-v-f2b6376c] {\n    font-size: 3.5rem;\n}\n.main-container .description p[data-v-f2b6376c] {\n    font-size: 2rem;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -20959,7 +21017,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".main-side[data-v-7865dfca] {\n  width: 100%;\n  height: 100vh;\n  background-color: #fffff8;\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.main-side .event[data-v-7865dfca] {\n  font-size: 1.5rem;\n  padding: .75rem;\n}\n.main-side .event h2[data-v-7865dfca] {\n  margin-top: .75rem;\n  margin-bottom: .75rem;\n}\n.main-side .flowers[data-v-7865dfca] {\n  width: 50vw;\n  height: 50vw;\n  max-width: 500px;\n  max-height: 500px;\n  position: absolute;\n  background-position: center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n.main-side .f1[data-v-7865dfca] {\n  top: 0;\n  left: 0;\n  margin-left: -.6rem;\n  background-image: url(\"https://withjoy.dexecure.net/assets/public/styles/prod/fionas_flowers/8bfe1ae2be6878d41b7a542012db292c25b59d496ee74083e0b58604ea6742c1@1x\");\n}\n.main-side .f2[data-v-7865dfca] {\n  background-image: url(\"https://withjoy.dexecure.net/assets/public/styles/prod/fionas_flowers/c7802621bdb574c650445e0d71dc4d8e747a682c68dc5b9549c1df2a99ba6fa8@1x\");\n  bottom: 0;\n  right: 0;\n}\n@media (min-width: 768px) {\n.main-side .flowers[data-v-7865dfca] {\n    max-width: 250px;\n    max-height: 250px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".main-side[data-v-7865dfca] {\n  width: 100%;\n  height: 100vh;\n  background-color: #fffff8;\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.main-side .event[data-v-7865dfca] {\n  font-size: 1.5rem;\n  padding: .75rem;\n}\n.main-side .event h2[data-v-7865dfca] {\n  margin-top: .75rem;\n  margin-bottom: .75rem;\n}\n.main-side .event *[data-v-7865dfca] {\n  text-align: center;\n}\n.main-side .flowers[data-v-7865dfca] {\n  width: 50vw;\n  height: 50vw;\n  max-width: 500px;\n  max-height: 500px;\n  position: absolute;\n  background-position: center;\n  background-size: contain;\n  background-repeat: no-repeat;\n}\n.main-side .f1[data-v-7865dfca] {\n  top: 0;\n  left: 0;\n  margin-left: -.6rem;\n  background-image: url(\"https://withjoy.dexecure.net/assets/public/styles/prod/fionas_flowers/8bfe1ae2be6878d41b7a542012db292c25b59d496ee74083e0b58604ea6742c1@1x\");\n}\n.main-side .f2[data-v-7865dfca] {\n  background-image: url(\"https://withjoy.dexecure.net/assets/public/styles/prod/fionas_flowers/c7802621bdb574c650445e0d71dc4d8e747a682c68dc5b9549c1df2a99ba6fa8@1x\");\n  bottom: 0;\n  right: 0;\n}\n@media (min-width: 768px) {\n.main-side .flowers[data-v-7865dfca] {\n    max-width: 250px;\n    max-height: 250px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21031,7 +21089,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".main-con[data-v-273893c0] {\n  padding: 1.5rem;\n}\n.main-con h1[data-v-273893c0] {\n  text-align: center;\n  margin-bottom: 1rem;\n}\n.main-con .gallery[data-v-273893c0] {\n  justify-content: center;\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n}\n.main-con .gallery p[data-v-273893c0] {\n  font-weight: 600;\n}\n.main-con .gallery .pic[data-v-273893c0] {\n  max-width: 40%;\n  min-width: 11rem;\n  margin: 0 .5rem 1.25rem;\n}\n.main-con .gallery .pic img[data-v-273893c0] {\n  max-width: 100%;\n  min-width: 11rem;\n  transition: transform 250ms ease-out;\n  border: 5px solid rgba(255, 165, 0, 0);\n}\n.main-con .gallery .pic img[data-v-273893c0]:hover {\n  cursor: pointer;\n  border: 5px solid orange;\n  transform: scale(1.25);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".main-con[data-v-273893c0] {\n  display: none;\n  padding: 1.5rem;\n}\n.main-con h1[data-v-273893c0] {\n  text-align: center;\n  margin-bottom: 1rem;\n}\n.main-con .gallery[data-v-273893c0] {\n  justify-content: center;\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n}\n.main-con .gallery p[data-v-273893c0] {\n  font-weight: 600;\n}\n.main-con .gallery .pic[data-v-273893c0] {\n  max-width: 40%;\n  min-width: 11rem;\n  margin: 0 .5rem 1.25rem;\n}\n.main-con .gallery .pic img[data-v-273893c0] {\n  max-width: 100%;\n  min-width: 11rem;\n  transition: transform 250ms ease-out;\n  border: 5px solid rgba(255, 165, 0, 0);\n}\n.main-con .gallery .pic img[data-v-273893c0]:hover {\n  cursor: pointer;\n  border: 5px solid orange;\n  transform: scale(1.25);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21127,7 +21185,31 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".app-con[data-v-53f13272] {\n  background-color: #fffff8;\n  min-width: 100vw;\n  display: flex;\n}\n.app-con .home[data-v-53f13272] {\n  z-index: -1;\n}\n.app-con .side[data-v-53f13272] {\n  width: 100vw;\n  display: flex;\n  flex-direction: column;\n}\n@media (min-width: 768px) {\n.home[data-v-53f13272] {\n    /*position: fixed;*/\n    width: 70%;\n    top: 0;\n    left: 0;\n}\n.side[data-v-53f13272] {\n    overflow: auto;\n    float: right;\n    width: 30vw;\n    z-index: 1;\n    right: 0;\n    padding: 1rem;\n}\n}\n.v-enter-active[data-v-53f13272],\n.v-leave-active[data-v-53f13272] {\n  transition: opacity 0.5s ease;\n}\n.v-enter-from[data-v-53f13272],\n.v-leave-to[data-v-53f13272] {\n  opacity: 0;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".app-con[data-v-53f13272] {\n  background-color: #fffff8;\n  min-width: 100vw;\n  display: flex;\n}\n.app-con .home[data-v-53f13272] {\n  z-index: -1;\n}\n.app-con .side[data-v-53f13272] {\n  width: 100vw;\n  display: flex;\n  flex-direction: column;\n}\n@media (min-width: 768px) {\n.home[data-v-53f13272] {\n    /*position: fixed;*/\n    width: 70%;\n    top: 0;\n    left: 0;\n}\n.side[data-v-53f13272] {\n    overflow: auto;\n    float: right;\n    width: 30vw;\n    z-index: 1;\n    right: 0;\n    padding: 0 0 1rem 1rem;\n}\n}\n.v-enter-active[data-v-53f13272],\n.v-leave-active[data-v-53f13272] {\n  transition: opacity 0.5s ease;\n}\n.v-enter-from[data-v-53f13272],\n.v-leave-to[data-v-53f13272] {\n  opacity: 0;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\nhtml{\n        background-color: #fffff8 !important;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -21254,10 +21336,10 @@ module.exports = function (url, options) {
 
 /***/ }),
 
-/***/ "./public/images/wedding-placeholder.jpg":
-/*!***********************************************!*\
-  !*** ./public/images/wedding-placeholder.jpg ***!
-  \***********************************************/
+/***/ "./public/images/picture-1.jpg":
+/*!*************************************!*\
+  !*** ./public/images/picture-1.jpg ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21265,14 +21347,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/wedding-placeholder.jpg?8476f4954aee8b4ed3eb19cef53ced5c");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/picture-1.jpg?6a179631c6fb60870843f4c1e3195ef6");
 
 /***/ }),
 
-/***/ "./public/images/wedding2.jpg":
-/*!************************************!*\
-  !*** ./public/images/wedding2.jpg ***!
-  \************************************/
+/***/ "./public/images/picture-6.jpg":
+/*!*************************************!*\
+  !*** ./public/images/picture-6.jpg ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21280,7 +21362,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/wedding2.jpg?eccef1e4fb21221b8b0a712b09627182");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/picture-6.jpg?46a184d6ab3ad4d21f5b9ad31f124e7e");
+
+/***/ }),
+
+/***/ "./public/images/picture-8.jpg":
+/*!*************************************!*\
+  !*** ./public/images/picture-8.jpg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/picture-8.jpg?3c7444c1a0f0066a65204c71c6c7252a");
 
 /***/ }),
 
@@ -39003,6 +39100,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_app_vue_vue_type_style_index_1_id_53f13272_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./app.vue?vue&type=style&index=1&id=53f13272&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_app_vue_vue_type_style_index_1_id_53f13272_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_app_vue_vue_type_style_index_1_id_53f13272_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -39378,15 +39505,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _MainSide_vue_vue_type_template_id_7865dfca_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MainSide.vue?vue&type=template&id=7865dfca&scoped=true */ "./resources/js/components/MainSide.vue?vue&type=template&id=7865dfca&scoped=true");
-/* harmony import */ var _MainSide_vue_vue_type_style_index_0_id_7865dfca_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MainSide.vue?vue&type=style&index=0&id=7865dfca&lang=scss&scoped=true */ "./resources/js/components/MainSide.vue?vue&type=style&index=0&id=7865dfca&lang=scss&scoped=true");
-/* harmony import */ var C_Users_yinka_OneDrive_Desktop_code_works_serious_yemi_efe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _MainSide_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MainSide.vue?vue&type=script&lang=js */ "./resources/js/components/MainSide.vue?vue&type=script&lang=js");
+/* harmony import */ var _MainSide_vue_vue_type_style_index_0_id_7865dfca_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MainSide.vue?vue&type=style&index=0&id=7865dfca&lang=scss&scoped=true */ "./resources/js/components/MainSide.vue?vue&type=style&index=0&id=7865dfca&lang=scss&scoped=true");
+/* harmony import */ var C_Users_yinka_OneDrive_Desktop_code_works_serious_yemi_efe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
-const script = {}
+
+
 
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_Users_yinka_OneDrive_Desktop_code_works_serious_yemi_efe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(script, [['render',_MainSide_vue_vue_type_template_id_7865dfca_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-7865dfca"],['__file',"resources/js/components/MainSide.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_Users_yinka_OneDrive_Desktop_code_works_serious_yemi_efe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_MainSide_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_MainSide_vue_vue_type_template_id_7865dfca_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-7865dfca"],['__file',"resources/js/components/MainSide.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -39595,7 +39724,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_vue_vue_type_template_id_53f13272_scoped_true_class_app_con__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.vue?vue&type=template&id=53f13272&scoped=true&class=app-con */ "./resources/js/views/app.vue?vue&type=template&id=53f13272&scoped=true&class=app-con");
 /* harmony import */ var _app_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.vue?vue&type=script&lang=js */ "./resources/js/views/app.vue?vue&type=script&lang=js");
 /* harmony import */ var _app_vue_vue_type_style_index_0_id_53f13272_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.vue?vue&type=style&index=0&id=53f13272&lang=scss&scoped=true */ "./resources/js/views/app.vue?vue&type=style&index=0&id=53f13272&lang=scss&scoped=true");
-/* harmony import */ var C_Users_yinka_OneDrive_Desktop_code_works_serious_yemi_efe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _app_vue_vue_type_style_index_1_id_53f13272_lang_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.vue?vue&type=style&index=1&id=53f13272&lang=css */ "./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css");
+/* harmony import */ var C_Users_yinka_OneDrive_Desktop_code_works_serious_yemi_efe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -39603,7 +39733,8 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_Users_yinka_OneDrive_Desktop_code_works_serious_yemi_efe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_app_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_app_vue_vue_type_template_id_53f13272_scoped_true_class_app_con__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-53f13272"],['__file',"resources/js/views/app.vue"]])
+
+const __exports__ = /*#__PURE__*/(0,C_Users_yinka_OneDrive_Desktop_code_works_serious_yemi_efe_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_4__["default"])(_app_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_app_vue_vue_type_template_id_53f13272_scoped_true_class_app_con__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-53f13272"],['__file',"resources/js/views/app.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -39640,6 +39771,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Home_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Home_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Home.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Home.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/components/MainSide.vue?vue&type=script&lang=js":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/MainSide.vue?vue&type=script&lang=js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainSide_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MainSide_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./MainSide.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/MainSide.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -40042,6 +40189,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_12_use_2_node_modules_sass_loader_dist_cjs_js_clonedRuleSet_12_use_3_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_app_vue_vue_type_style_index_0_id_53f13272_lang_scss_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!../../../node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./app.vue?vue&type=style&index=0&id=53f13272&lang=scss&scoped=true */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/app.vue?vue&type=style&index=0&id=53f13272&lang=scss&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css":
+/*!********************************************************************************!*\
+  !*** ./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_app_vue_vue_type_style_index_1_id_53f13272_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./app.vue?vue&type=style&index=1&id=53f13272&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/views/app.vue?vue&type=style&index=1&id=53f13272&lang=css");
 
 
 /***/ }),

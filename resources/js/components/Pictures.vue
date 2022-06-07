@@ -33,6 +33,7 @@ export default {
 </script>
 <style lang="scss" scoped>
     .main-con {
+        display: none;
         padding: 1.5rem;
         h1{
             text-align: center;

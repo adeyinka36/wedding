@@ -26,18 +26,12 @@ export default{
         return{
             currentImage: null,
             showModal: false,
-            images:[
-                '../../images/people.jpg',
-                '../../images/people2.jpg',
-                '../../images/people.jpg',
-                '../../images/people2.jpg',
-                '../../images/people.jpg',
-                '../../images/people2.jpg',
-                '../../images/people.jpg',
-                '../../images/people2.jpg',
-                '../../images/people.jpg',
-                '../../images/people2.jpg',
-            ]
+            images:[]
+        }
+    },
+    created(){
+        for(let i=1; i<=8; i++){
+            this.images.push(`../../images/picture-${i}.jpg`)
         }
     },
     methods:{

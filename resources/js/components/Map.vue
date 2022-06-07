@@ -2,10 +2,13 @@
     <div class="map-con">
         <h1 class="watch">Location</h1>
         <div class="desc">
-            <p>EKO HOTEL, LAGOS.</p>
+            <p>The Palm Centre.</p>
+            <p>No. 7 Ogala Street, off Owo-Eke Road</p>
+            <p>Boji Boji Owa-Agbor</p>
             <p>SATURDAY, JUNE 11TH 2022</p>
+            <p>Time: 12noon.</p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179373.19670210892!2d3.1205295379310227!3d6.568909183523651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53aec4dd92d%3A0x5e34fe6a84cddd53!2sEko%20Hotels%20%26%20Suites!5e0!3m2!1sen!2suk!4v1652534711929!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31728.935579149846!2d6.164735448961567!3d6.248316921289028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10414e56ba75d509%3A0xfb109346984ce351!2sAgbor%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1654616591162!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </template>
 

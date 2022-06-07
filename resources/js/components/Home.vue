@@ -12,7 +12,7 @@
                     <li @click="$emit('scroll', 'location');showDrop=false">Location</li>
                     <li @click="$emit('scroll', 'ques');showDrop=false">Q & A</li>
                     <li @click="$emit('scroll', 'travel');showDrop=false">Travel</li>
-                    <li @click="$emit('scroll', 'pictures');showDrop=false">Reception</li>
+<!--                    <li @click="$emit('scroll', 'pictures');showDrop=false">Reception</li>-->
                     <li @click="$emit('showGallery')">Gallery</li>
                 </ul>
             </div>
@@ -58,8 +58,8 @@ export default{
     max-width: 100%;
     position: relative;
     transition: background 750ms ease-out;
-    background-image: url("../../../public/images/wedding-placeholder.jpg");
-    background-position: center;
+    background-image: url("../../../public/images/picture-1.jpg");
+    background-position: 0 .05rem;
     background-size: cover;
     background-repeat: no-repeat;
     .description {
@@ -67,7 +67,7 @@ export default{
         width: 100%;
         height: 100%;
         background: radial-gradient(rgba(0,0,0,0), #000);
-        padding: 2rem 5rem 2rem 2rem;
+        padding: 2rem 5rem 5rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -110,16 +110,16 @@ export default{
     }
 }
 .main-container .map{
-    background-image: url("../../../public/images/wedding2.jpg");
+    background-image: url("../../../public/images/picture-6.jpg");
 }
 .main-container .story{
-    background-image: url("../../../public/images/wedding-placeholder.jpg");
+    background-image: url("../../../public/images/picture-8.jpg");
 }
 .main-container .travel{
-    background-image: url("../../../public/images/wedding2.jpg");
+    background-image: url("../../../public/images/picture-1.jpg");
 }
 .main-container  .ques{
-    background-image: url("../../../public/images/wedding-placeholder.jpg");
+    background-image: url("../../../public/images/picture-8.jpg");
 }
 @media(min-width: 768px){
     .main-container{
@@ -130,10 +130,10 @@ export default{
         }
         .description{
             h1{
-             font-size: 2rem;
+             font-size: 3.5rem;
             }
             p{
-             font-size: 1.5rem;
+             font-size: 2rem;
             }
         }
     }
