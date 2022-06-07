@@ -138,5 +138,10 @@ export default{
         }
     }
 }
+@media(max-width: 767px) {
+    .main-container .main {
+     background-position: center;
+    }
+}
 
 </style>
