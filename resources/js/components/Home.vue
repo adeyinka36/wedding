@@ -10,7 +10,7 @@
                     <li @click="$emit('scroll', 'home');showDrop=false">Home</li>
                     <li @click="$emit('scroll', 'story');showDrop=false">Story</li>
                     <li @click="$emit('scroll', 'location');showDrop=false">Location</li>
-                    <li @click="$emit('scroll', 'ques');showDrop=false">Q & A</li>
+<!--                    <li @click="$emit('scroll', 'ques');showDrop=false">Q & A</li>-->
                     <li @click="$emit('scroll', 'travel');showDrop=false">Travel</li>
 <!--                    <li @click="$emit('scroll', 'pictures');showDrop=false">Reception</li>-->
                     <li @click="$emit('showGallery')">Gallery</li>

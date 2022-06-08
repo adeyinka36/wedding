@@ -49,6 +49,7 @@ export default{
 
 <style lang="scss" scoped>
    .main-con{
+       display: none;
        padding: 1rem;
        h1{
            margin-top: 2.2rem;

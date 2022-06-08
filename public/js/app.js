@@ -20270,26 +20270,20 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
       $data.showDrop = false;
     })
-  }, "Location"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+  }, "Location"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                    <li @click=\"$emit('scroll', 'ques');showDrop=false\">Q & A</li>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
     onClick: _cache[7] || (_cache[7] = function ($event) {
-      _ctx.$emit('scroll', 'ques');
-
-      $data.showDrop = false;
-    })
-  }, "Q & A"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
-    onClick: _cache[8] || (_cache[8] = function ($event) {
       _ctx.$emit('scroll', 'travel');
 
       $data.showDrop = false;
     })
   }, "Travel"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                    <li @click=\"$emit('scroll', 'pictures');showDrop=false\">Reception</li>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
-    onClick: _cache[9] || (_cache[9] = function ($event) {
+    onClick: _cache[8] || (_cache[8] = function ($event) {
       return _ctx.$emit('showGallery');
     })
   }, "Gallery")], 2
   /* CLASS */
   )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    onClick: _cache[10] || (_cache[10] = function ($event) {
+    onClick: _cache[9] || (_cache[9] = function ($event) {
       return $data.showDrop = false;
     }),
     "class": "description"
@@ -20362,9 +20356,9 @@ var _hoisted_8 = /*#__PURE__*/_withScopeId(function () {
 });
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, this.future ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_6, "In " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.days) + "Days and " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.hours) + "Hrs.", 1
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, this.future ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_6, "In " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.days) + "days and " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.hours) + "hrs.", 1
   /* TEXT */
-  )) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.days) + "Days and " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.hours) + "Hrs Ago.", 1
+  )) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.days) + "days and " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.hours) + "hrs Ago.", 1
   /* TEXT */
   ))]), _hoisted_8]);
 }
@@ -20662,35 +20656,11 @@ var _hoisted_1 = {
   "class": "main-story"
 };
 
-var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-    "class": "story"
-  }, "OUR STORY", -1
-  /* HOISTED */
-  );
-});
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h1 class=\"story\" data-v-3849ef1a>OUR STORY</h1><p data-v-3849ef1a><strong data-v-3849ef1a>ADE</strong></p><p data-v-3849ef1a>It all started in the DM – On the fateful day, I was casually browsing through my feed then I came across this beautiful and interesting looking lady – the picture was for her celebrating the completion of her masters. Naturally, I was intrigued and decided to slide right into the DM to strike up a conversation with the line: “You have such a beautiful smile and brains to match by the looks… how are you doing?” - cheesy I know haha. She replied to me, and the rest was history.</p><p data-v-3849ef1a>During our long conversations which became a constant for us, I found out that I shared a lot of things with this wonderful lady – ‘Ife mi’. She also complemented me on my not so strong areas. Being in a long-distance relationship, it was always challenging wanting to see the love of your life but not being able to as often. We saw each other a couple of times and at some point, I knew that it was only natural to take the next step. </p><p data-v-3849ef1a>I proposed to Efe in October 2021 as I couldn’t see myself embarking on this journey of life with anyone else. All the wonderful and challenging times we have had has just further strengthened my resolve that you are the one I want to do all of life with.</p><p data-v-3849ef1a>I love to the moon and back Efe.</p><br data-v-3849ef1a><br data-v-3849ef1a><p data-v-3849ef1a><strong data-v-3849ef1a>EFE</strong></p><p data-v-3849ef1a>We found each other online on a social media app – Instagram. We grew a strong liking to each other and found ourselves talking/calling every day, with our interests and views on life being very similar we could talk for hours. I saw Adeyemi as a very pleasant guy who was very easy to talk to and conversations with him was always very interesting and inspiring, this made it so easy and natural to accept when Adeyemi asked me to be his girlfriend in 2019. Even though this was scary to me being that we were in two distant countries, I truly fancied and cared about him. Our relationship blossomed daily, we agreed to send loving text messages to each other every morning, which kept our bond strong despite the distance.</p><p data-v-3849ef1a>In October 2021, we decided to take a trip to Ghana for my birthday. This was such an amazing experience for me because I got to spend it with the most amazing man, someone I love with my whole heart. After my birthday, before we got ready to head back, Adeyemi took me to dinner, went on one knee and asked me to be his wife, and of course I said yes. It was a really happy day for us. </p><p data-v-3849ef1a>I love you Ade mi, my perfect gentleman and person for life.</p>", 12);
 
-var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_6 = [_hoisted_2, _hoisted_3, _hoisted_4, _hoisted_5];
+var _hoisted_14 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_6);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_14);
 }
 
 /***/ }),
@@ -20725,22 +20695,14 @@ var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-    "class": "note"
-  }, "For all our friends and family who have lots of questions, please check out out Q & A first!", -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_4 = {
+var _hoisted_3 = {
   "class": "questions"
 };
-var _hoisted_5 = {
+var _hoisted_4 = {
   "class": "con"
 };
 
-var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
     "class": "car",
     xmlns: "http://www.w3.org/2000/svg",
@@ -20752,17 +20714,17 @@ var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_7 = {
+var _hoisted_6 = {
   "class": "note"
 };
-var _hoisted_8 = {
+var _hoisted_7 = {
   "class": "orange"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.questions, function (ques) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(ques[0]), 1
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.questions, function (ques) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(ques[0]), 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(ques[1]), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(ques[1]), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(ques[2]), 1
     /* TEXT */
@@ -21113,7 +21075,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".main-con[data-v-1d47061c] {\n  padding: 1rem;\n}\n.main-con h1[data-v-1d47061c] {\n  margin-top: 2.2rem;\n}\n.main-con h1[data-v-1d47061c], .main-con p[data-v-1d47061c] {\n  margin-bottom: 1rem;\n  text-align: center;\n}\n.main-con .note[data-v-1d47061c] {\n  font-weight: 600;\n}\n.questions[data-v-1d47061c] {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n}\n.questions .con[data-v-1d47061c] {\n  margin-bottom: 1.25rem;\n  display: flex;\n}\n.questions .con h4[data-v-1d47061c] {\n  margin-right: .5rem;\n}\n.questions .con div p[data-v-1d47061c] {\n  margin-bottom: .5rem;\n  text-align: left;\n}\n.questions .con span[data-v-1d47061c] {\n  display: flex;\n  height: 100%;\n  margin-bottom: auto;\n}\n.questions .con span div[data-v-1d47061c] {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".main-con[data-v-1d47061c] {\n  display: none;\n  padding: 1rem;\n}\n.main-con h1[data-v-1d47061c] {\n  margin-top: 2.2rem;\n}\n.main-con h1[data-v-1d47061c], .main-con p[data-v-1d47061c] {\n  margin-bottom: 1rem;\n  text-align: center;\n}\n.main-con .note[data-v-1d47061c] {\n  font-weight: 600;\n}\n.questions[data-v-1d47061c] {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n}\n.questions .con[data-v-1d47061c] {\n  margin-bottom: 1.25rem;\n  display: flex;\n}\n.questions .con h4[data-v-1d47061c] {\n  margin-right: .5rem;\n}\n.questions .con div p[data-v-1d47061c] {\n  margin-bottom: .5rem;\n  text-align: left;\n}\n.questions .con span[data-v-1d47061c] {\n  display: flex;\n  height: 100%;\n  margin-bottom: auto;\n}\n.questions .con span div[data-v-1d47061c] {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

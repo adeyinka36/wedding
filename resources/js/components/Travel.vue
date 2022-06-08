@@ -1,7 +1,6 @@
 <template>
     <div class="main-con">
         <h1 class="travel">TRAVEL</h1>
-        <p class="note">For all our friends and family who have lots of questions, please check out out Q & A first!</p>
         <div class="questions">
             <div v-for="ques in questions" class="con">
                 <h4>
