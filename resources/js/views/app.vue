@@ -5,7 +5,7 @@
         <MainSide id="home"/>
         <Story id="story" @story="story"/>
         <Map id="location" @map="map"/>
-        <Questions id="ques" @ques="ques"/>
+<!--        <Questions id="ques" @ques="ques"/>-->
         <Travel id="travel" @travel="travel"/>
         <Pictures id="pictures" :current="current" @selected="selected" class="watch"/>
         <Transition>

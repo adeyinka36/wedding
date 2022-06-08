@@ -20769,8 +20769,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Map = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Map");
 
-  var _component_Questions = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Questions");
-
   var _component_Travel = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Travel");
 
   var _component_Pictures = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Pictures");
@@ -20800,12 +20798,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onMap: $options.map
   }, null, 8
   /* PROPS */
-  , ["onMap"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Questions, {
-    id: "ques",
-    onQues: $options.ques
-  }, null, 8
-  /* PROPS */
-  , ["onQues"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Travel, {
+  , ["onMap"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Questions id=\"ques\" @ques=\"ques\"/>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Travel, {
     id: "travel",
     onTravel: $options.travel
   }, null, 8

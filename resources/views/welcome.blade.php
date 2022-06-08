@@ -11,7 +11,7 @@
     </script>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
 
-    <title>{{env('APP_NAME')}}</title>
+    <title>yemiwedsefe.com</title>
 </head>
 <body>
 <div id="app">
